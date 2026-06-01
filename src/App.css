@@ -1,0 +1,17 @@
+@import "tailwindcss";
+
+@theme {
+    --animate-highlight: highlight 1s ease-in-out infinite;
+    @keyframes highlight {
+        0% {
+            width: 0;
+        }
+        100% {
+            width: 100%;
+            background: #fbff2b;
+
+        }
+        50% {
+        }
+    }
+}
