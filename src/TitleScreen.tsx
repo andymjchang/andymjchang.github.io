@@ -8,6 +8,7 @@ import ArrowDownwardRoundedIcon from '@mui/icons-material/ArrowDownwardRounded';
 import Link from '@mui/material/Link';
 
 import "./app.css";
+import LinkSection from "./LinkSection.tsx";
 
 
 type TitleContainerProps = {
@@ -29,7 +30,8 @@ function TitleContainer (
     {header, githubLink, linkedinLink, email, children}:
     TitleContainerProps) {
     return (
-        <div className="w-full h-1/2 content-center">
+        <div className="h-1/2 content-center pt-12 w-full justify-items-center">
+        <div className="max-w-240">
             <h2 className="font-light tracking-tighter text-center
                         text-3xl md:text-4xl md:px-40 py-2">
                 {header}
@@ -39,22 +41,13 @@ function TitleContainer (
                 {children}
             </h3>
 
-            <div className="flex flex-row gap-x-1 justify-center p-4">
-                <Link href={githubLink}
-                      target="_blank" color="inherit">
-                    <GitHubIcon sx={{ fontSize: 32 }}/>
-                </Link>
-                <Link href={linkedinLink}
-                      target="_blank" color="inherit">
-                    <LinkedInIcon sx={{ fontSize: 32 }}/>
-                </Link>
-                <Link href={"mailto:" + email}
-                      target="_blank" color="inherit">
-                    <EmailRoundedIcon sx={{ fontSize: 32 }}/>
-                </Link>
-            </div>
+            <LinkSection
+                githubLink={githubLink}
+                linkedinLink={linkedinLink}
+                email={email}
+            />
 
-            <div className="flex flex-row justify-center w-full bottom-2">
+            <div className="flex flex-row justify-center w-full pt-6">
                 <div className="flex flex-none justify-center bg-mist-100">
                     <ArrowDownwardRoundedIcon className="mr-1"/>
                     <h3 className="content-center font-bold tracking-tighter mr-1">
@@ -63,6 +56,7 @@ function TitleContainer (
                 </div>
             </div>
 
+        </div>
         </div>
     )
 }
