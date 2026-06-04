@@ -8,7 +8,6 @@ import tempImage from './assets/TempImage.jpg'
 
 import DumpsterDiverImage1 from './assets/DumpsterDivers/1.webp'
 import DumpsterDiverImage2 from './assets/DumpsterDivers/2.webp'
-import DumpsterDiverImage3 from './assets/DumpsterDivers/3.webp'
 import DumpsterDiverImage4 from './assets/DumpsterDivers/4.webp'
 import DumpsterDiverImage5 from './assets/DumpsterDivers/5.webp'
 import DumpsterDiverImage6 from './assets/DumpsterDivers/6.webp'
@@ -52,9 +51,9 @@ const TitleCopy = {
     "githubLink": "https://github.com/andymjchang",
     "linkedinLink": "https://www.linkedin.com/in/andy-chang-0639a6262",
     "email":"andymjchang@gmail.com",
-    "images":[tempImage,
-        tempImage,
-        tempImage]
+    "images":[DreadReignImage2,
+        DumpsterDiverImage5,
+        TempoTailsImage4]
 }
 
 const DreadReignCopy = {

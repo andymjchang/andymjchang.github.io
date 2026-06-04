@@ -10,7 +10,7 @@ type BiographySectionProps = {
 
 function BiographySection({description, profileImage, petImages, children}: BiographySectionProps) {
     return (
-        <div className=" w-full justify-items-center md:h-120 mb-84 ">
+        <div className=" w-full justify-items-center md:h-120 mb-84 mt-40">
             <div className="flex flex-col md:flex-row h-full
                             w-2/3 m:4/5 lg:w-3/4 xl:w-2/3 max-w-240
                             ">
@@ -36,7 +36,7 @@ function BiographySection({description, profileImage, petImages, children}: Biog
                     <div className="text-left whitespace-pre-wrap">
                         <h1 className="w-full font-light tracking-tighter
                         text-2xl md:text-3xl pb-4">
-                            
+
                         </h1>
                         <p>
                             {description}
