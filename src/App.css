@@ -1,17 +1,6 @@
 @import "tailwindcss";
 
 @theme {
-    --animate-highlight: highlight 1s ease-in-out infinite;
-    @keyframes highlight {
-        0% {
-            width: 0;
-        }
-        100% {
-            width: 100%;
-            background: #fbff2b;
+    --animate-highlight: relative before:absolute before:-z-1 before:content-[''] before:bg-[#fbff2b] before:h-[20px] before:left-0 before:bottom-[10px] before:w-0 before:opacity-70 before:transition-all before:duration-500 hover:before:w-full;
 
-        }
-        50% {
-        }
-    }
 }
