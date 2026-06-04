@@ -87,6 +87,7 @@ const DumpsterDiverCopy = {
     "subtitle": "Gameplay Engineer / C++, Unreal Engine 5, Blueprints",
     "description": "A 3D roguelite hack ‘n’ slash. Play as a feisty raccoon and free the farm from robot invaders!",
     "image": DumpsterDiverImage5,
+    "link": 'https://store.steampowered.com/app/3733590/Vegetables_of_Mass_Destruction/',
     "subsections": [
         {
             "description": "Designed and implemented 3 weapon classes, 7 enemies, and 20+ character upgrades",
@@ -117,6 +118,7 @@ const TempoTailsCopy = {
     "subtitle": "Gameplay Engineer / GDScript, C#, Godot",
     "description": "A 2D rhythm platformer where players jump and punch enemies to the beat of the music!",
     "image": TempoTailsImage4,
+    "link": "https://kayreo.itch.io/tempo-tails",
     "subsections": [
         {
             "description": "Implemented the movement physics and rhythm based scoring",
@@ -183,12 +185,14 @@ function App() {
             description={DumpsterDiverCopy.description}
             image={DumpsterDiverCopy.image}
             subsections={DumpsterDiverCopy.subsections}
+            link={DumpsterDiverCopy.link}
         />
         <ProjectSection
             title={TempoTailsCopy.title}
             subtitle={TempoTailsCopy.subtitle}
             description={TempoTailsCopy.description}
             image={TempoTailsCopy.image}
+            link={TempoTailsCopy.link}
             subsections={TempoTailsCopy.subsections}
         />
 

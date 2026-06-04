@@ -1,16 +1,20 @@
 import ArrowBackRoundedIcon from '@mui/icons-material/ArrowBackRounded';
 import ArrowForwardRoundedIcon from '@mui/icons-material/ArrowForwardRounded';
+import ArrowOutwardIcon from '@mui/icons-material/ArrowOutward';
 
 
 import "./app.css";
 import {type MouseEventHandler, useLayoutEffect, useRef, useState} from "react";
 import {IconButton} from "@mui/material";
+import Link from "@mui/material/Link";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
 
 type ProjectTitleContainerProps = {
     "title": string;
     "subtitle": string;
     "description": string;
     "image": string;
+    "link"?: string;
 }
 
 type subsectionsProps = {
@@ -24,7 +28,7 @@ type ProjectSubsectionProps = {
 
 type ProjectSectionProps = ProjectTitleContainerProps & ProjectSubsectionProps
 
-function ProjectTitleContainer({ title, subtitle, description, image }: ProjectTitleContainerProps) {
+function ProjectTitleContainer({ title, subtitle, description, image, link }: ProjectTitleContainerProps) {
     return (
         <>
             <div className="h-140">
@@ -42,6 +46,12 @@ function ProjectTitleContainer({ title, subtitle, description, image }: ProjectT
 
                                 ">
                     {title}
+
+                    {link &&
+                        <Link href={link}
+                           target="_blank" color="inherit">
+                        <ArrowOutwardIcon sx={{fontSize: 58}}/>
+                    </Link>}
                 </h1>
                 <h2 className="py-2 text-2xl font-light">
                     {subtitle}
@@ -113,7 +123,7 @@ function ProjectSubsectionsContainer({ subsections }: ProjectSubsectionProps) {
 }
 
 
-function ProjectSection({ title, subtitle, description, image, subsections}
+function ProjectSection({ title, subtitle, description, image, subsections, link}
                         : ProjectSectionProps) {
     return (
         <div className="">
@@ -122,7 +132,8 @@ function ProjectSection({ title, subtitle, description, image, subsections}
             title={title}
             subtitle={subtitle}
             description={description}
-            image={image}/>
+            image={image}
+            link={link}/>
 
             <ProjectSubsectionsContainer
             subsections={subsections}/>
