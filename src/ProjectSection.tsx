@@ -1,5 +1,3 @@
-import tempImage from './assets/TempImage.jpg'
-
 import ArrowBackRoundedIcon from '@mui/icons-material/ArrowBackRounded';
 import ArrowForwardRoundedIcon from '@mui/icons-material/ArrowForwardRounded';
 
@@ -31,7 +29,7 @@ function ProjectTitleContainer({ title, subtitle, description, image }: ProjectT
         <>
             <div className="h-140">
                 <img className="h-full w-full object-cover"
-                     src={tempImage} alt={"Cover"}/>
+                     src={image} alt={"Cover"}/>
             </div>
             <div className="px-16 pt-8 text-left">
                 <h1 className="

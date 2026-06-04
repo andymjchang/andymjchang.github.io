@@ -36,7 +36,7 @@ function BiographySection({description, profileImage, petImages, children}: Biog
                     <div className="text-left whitespace-pre-wrap">
                         <h1 className="w-full font-light tracking-tighter
                         text-2xl md:text-3xl pb-4">
-                            MOEWWWWWW!
+                            
                         </h1>
                         <p>
                             {description}
